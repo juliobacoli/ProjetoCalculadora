@@ -7,6 +7,7 @@ Soma();
 
 static void Soma()
 {
+    Console.Clear();
     Console.WriteLine("Digite o PRIMEIRO valor: ");
     float valor1 = float.Parse(Console.ReadLine());
 
@@ -14,4 +15,52 @@ static void Soma()
     float valor2 = float.Parse(Console.ReadLine());
 
     Console.WriteLine($"O resultado da soma é {valor1 + valor2}");
+    Console.ReadKey();
+}
+
+static void Subtracao()
+{
+    Console.Clear();
+    Console.WriteLine("Digite o PRIMEIRO valor: ");
+    float valor1 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite o SEGUNDO valor: ");
+    float valor2 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine($"O resultado da soma é {valor1 - valor2}");
+    Console.ReadKey();
+}
+
+static void Multiplicacao()
+{
+    Console.Clear();
+    Console.WriteLine("Digite o PRIMEIRO valor: ");
+    float valor1 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite o SEGUNDO valor: ");
+    float valor2 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine($"O resultado da soma é {valor1 * valor2}");
+    Console.ReadKey();
+}
+
+static void Divisa()
+{
+    Console.Clear();
+    Console.WriteLine("Digite o PRIMEIRO valor: ");
+    float valor1 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine("Digite o SEGUNDO valor: ");
+    float valor2 = float.Parse(Console.ReadLine());
+
+    Console.WriteLine($"O resultado da soma é {valor1 / valor2}");
+    Console.ReadKey();
+}
+
+static void Operacao()
+{
+    switch ()
+    {
+
+    }
 }
