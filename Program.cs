@@ -3,11 +3,13 @@ Console.WriteLine("====================================");
 Console.WriteLine("Bem vindo ao projeto CALCULADORA!");
 Console.WriteLine("====================================");
 
-Soma();
+Operacao();
 
 static void Soma()
 {
     Console.Clear();
+
+    Console.WriteLine($"Operação -> {nameof(Soma)}");
     Console.WriteLine("Digite o PRIMEIRO valor: ");
     float valor1 = float.Parse(Console.ReadLine());
 
@@ -21,6 +23,8 @@ static void Soma()
 static void Subtracao()
 {
     Console.Clear();
+
+    Console.WriteLine($"Operação -> {nameof(Subtracao)}");
     Console.WriteLine("Digite o PRIMEIRO valor: ");
     float valor1 = float.Parse(Console.ReadLine());
 
@@ -34,6 +38,8 @@ static void Subtracao()
 static void Multiplicacao()
 {
     Console.Clear();
+
+    Console.WriteLine($"Operação -> {nameof(Multiplicacao)}");
     Console.WriteLine("Digite o PRIMEIRO valor: ");
     float valor1 = float.Parse(Console.ReadLine());
 
@@ -44,9 +50,11 @@ static void Multiplicacao()
     Console.ReadKey();
 }
 
-static void Divisa()
+static void Divisao()
 {
     Console.Clear();
+
+    Console.WriteLine($"Operação -> {nameof(Divisao)}");
     Console.WriteLine("Digite o PRIMEIRO valor: ");
     float valor1 = float.Parse(Console.ReadLine());
 
@@ -59,8 +67,25 @@ static void Divisa()
 
 static void Operacao()
 {
-    switch ()
-    {
+    Console.WriteLine("Escolha o tipo de operação que deseja realizar:");
+    string tipoOperacao = Console.ReadLine();
 
+    switch (tipoOperacao)
+    {
+        case "+":
+            Soma();
+            break;
+        case "-":
+            Subtracao();
+            break;
+        case "*":
+            Multiplicacao();
+            break;
+        case "/":
+            Divisao();
+            break;
+        default:
+            Console.WriteLine($"Operação inválida");
+            break;
     }
 }
