@@ -101,6 +101,8 @@ static void Menu()
     Console.WriteLine("3 - Multiplicacao");
     Console.WriteLine("4 - Divisao");
 
+    Console.Write("\n");
+
     SeletorOperacao();
 
 }
