@@ -3,7 +3,7 @@ Console.WriteLine("====================================");
 Console.WriteLine("Bem vindo ao projeto CALCULADORA!");
 Console.WriteLine("====================================\n");
 
-Operacao();
+SeletorOperacao();
 
 static void Soma()
 {
@@ -65,7 +65,7 @@ static void Divisao()
     Console.ReadKey();
 }
 
-static void Operacao()
+static void SeletorOperacao()
 {
     Console.WriteLine("Escolha o tipo de operação que deseja realizar:");
     string tipoOperacao = Console.ReadLine();
