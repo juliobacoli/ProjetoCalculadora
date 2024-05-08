@@ -3,7 +3,7 @@ Console.WriteLine("====================================");
 Console.WriteLine("Bem vindo ao projeto CALCULADORA!");
 Console.WriteLine("====================================\n");
 
-SeletorOperacao();
+Menu();
 
 static void Soma()
 {
@@ -18,6 +18,7 @@ static void Soma()
 
     Console.WriteLine($"O resultado da soma é {valor1 + valor2}");
     Console.ReadKey();
+    Menu();
 }
 
 static void Subtracao()
@@ -33,6 +34,7 @@ static void Subtracao()
 
     Console.WriteLine($"O resultado da soma é {valor1 - valor2}");
     Console.ReadKey();
+    Menu();
 }
 
 static void Multiplicacao()
@@ -48,6 +50,7 @@ static void Multiplicacao()
 
     Console.WriteLine($"O resultado da soma é {valor1 * valor2}");
     Console.ReadKey();
+    Menu();
 }
 
 static void Divisao()
@@ -63,29 +66,41 @@ static void Divisao()
 
     Console.WriteLine($"O resultado da soma é {valor1 / valor2}");
     Console.ReadKey();
+    Menu();
 }
 
 static void SeletorOperacao()
 {
     Console.WriteLine("Escolha o tipo de operação que deseja realizar:");
-    string tipoOperacao = Console.ReadLine();
+    int tipoOperacao = int.Parse(Console.ReadLine());
 
     switch (tipoOperacao)
     {
-        case "+":
+        case 1:
             Soma();
             break;
-        case "-":
+        case 2:
             Subtracao();
             break;
-        case "*":
+        case 3:
             Multiplicacao();
             break;
-        case "/":
+        case 4:
             Divisao();
             break;
         default:
-            Console.WriteLine($"Operação inválida");
+            Menu();
             break;
     }
+}
+
+static void Menu()
+{
+    Console.WriteLine("1 - Soma");
+    Console.WriteLine("2 - Subtração");
+    Console.WriteLine("3 - Multiplicacao");
+    Console.WriteLine("4 - Divisao");
+
+    SeletorOperacao();
+
 }
