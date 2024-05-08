@@ -1,7 +1,7 @@
 ﻿Console.Clear();
 Console.WriteLine("====================================");
 Console.WriteLine("Bem vindo ao projeto CALCULADORA!");
-Console.WriteLine("====================================");
+Console.WriteLine("====================================\n");
 
 Operacao();
 
