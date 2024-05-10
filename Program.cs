@@ -88,7 +88,11 @@ static void SeletorOperacao()
         case 4:
             Divisao();
             break;
+        case 5:
+            Environment.Exit(0);
+            break;
         default:
+            Console.Clear();
             Menu();
             break;
     }
@@ -100,6 +104,7 @@ static void Menu()
     Console.WriteLine("2 - Subtração");
     Console.WriteLine("3 - Multiplicacao");
     Console.WriteLine("4 - Divisao");
+    Console.WriteLine("5 - Sair");
 
     Console.Write("\n");
 
